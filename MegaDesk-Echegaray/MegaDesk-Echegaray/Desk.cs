@@ -23,6 +23,9 @@ namespace MegaDesk_Echegaray
         public const double minDepth = 12;
         public const double maxDepth = 48;
 
+        public int width { get; set; }
+        public int depth { get; set; }
+        public int drawers { get; set; }
     }
 
 
