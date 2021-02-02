@@ -39,7 +39,7 @@ namespace MegaDesk_Echegaray
                 if (!InputWidth.Text.All(Char.IsDigit) && !InputWidth.Text.All(Char.IsControl))
                 {
                     InputWidth.Text = "";
-                    InputWidth.BackColor = Color.Red;
+                    InputWidth.BackColor = Color.FromArgb(212, 101, 95);
                     string message = "Please enter a number";
                     string title = "Error";
                     MessageBox.Show(message, title);
@@ -48,7 +48,7 @@ namespace MegaDesk_Echegaray
                 else if (double.Parse(InputWidth.Text) < Desk.minWidth)
                 {
                     InputWidth.Text = "";
-                    InputWidth.BackColor = Color.Red;
+                    InputWidth.BackColor = Color.FromArgb(212, 101, 95);
                     string message = "The minimun width size is 24 in.";
                     string title = "Error";
                     MessageBox.Show(message, title);
@@ -56,14 +56,14 @@ namespace MegaDesk_Echegaray
                 else if (double.Parse(InputWidth.Text) > Desk.maxWidth)
                 {
                     InputWidth.Text = "";
-                    InputWidth.BackColor = Color.Red;
+                    InputWidth.BackColor = Color.FromArgb(212, 101, 95);
                     string message = "The maximun width size is 96 in.";
                     string title = "Error";
                     MessageBox.Show(message, title);
                 }
                 else
                 {
-                    InputWidth.BackColor = Color.Green;
+                    InputWidth.BackColor = Color.FromArgb(99, 212, 95);
 
                 }
 
@@ -72,7 +72,7 @@ namespace MegaDesk_Echegaray
             catch
             {
                 InputWidth.Text = "";
-                InputWidth.BackColor = Color.Red;
+                InputWidth.BackColor = Color.FromArgb(212, 101, 95);
                 string message = "Invalid input. Please try again ";
                 string title = "Error";
                 MessageBox.Show(message, title);
@@ -86,7 +86,7 @@ namespace MegaDesk_Echegaray
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
 
-                InputDepth.BackColor = Color.Red;
+                InputDepth.BackColor = Color.FromArgb(212, 101, 95);
                 string message = "Please enter a number";
                 string title = "Error";
                 MessageBox.Show(message, title);
@@ -102,7 +102,7 @@ namespace MegaDesk_Echegaray
                 if (double.Parse(InputDepth.Text) < Desk.minDepth)
                 {
                     InputDepth.Text = "";
-                    InputDepth.BackColor = Color.Red;
+                    InputDepth.BackColor = Color.FromArgb(212, 101, 95);
                     string message = "The minimun depth size is 12 in.";
                     string title = "Error";
                     MessageBox.Show(message, title);
@@ -110,21 +110,21 @@ namespace MegaDesk_Echegaray
                 else if (double.Parse(InputDepth.Text) > Desk.maxDepth)
                 {
                     InputDepth.Text = "";
-                    InputDepth.BackColor = Color.Red;
+                    InputDepth.BackColor = Color.FromArgb(212, 101, 95);
                     string message = "The maximun depth size is 48 in.";
                     string title = "Error";
                     MessageBox.Show(message, title);
                 }
                 else
                 {
-                    InputDepth.BackColor = Color.Green;
+                    InputDepth.BackColor = Color.FromArgb(99, 212, 95);
                 }
 
             }
             catch
             {
                 InputDepth.Text = "";
-                InputDepth.BackColor = Color.Red;
+                InputDepth.BackColor = Color.FromArgb(212, 101, 95);
                 string message = "Invalid input. Please try again ";
                 string title = "Error";
                 MessageBox.Show(message, title);
