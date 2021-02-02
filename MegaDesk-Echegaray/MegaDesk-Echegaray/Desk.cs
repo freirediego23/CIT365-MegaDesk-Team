@@ -23,7 +23,6 @@ namespace MegaDesk_Echegaray
         public const double minDepth = 12;
         public const double maxDepth = 48;
 
-
     }
 
 
